@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kristian Frroku | Full-Stack Developer</title>
+
+  <!-- Basic SEO -->
+  <meta name="description" content="Kristian Frroku – Full-stack developer & data-driven problem solver. Python, React, Node, AWS."/>
+  <link rel="canonical" href="https://6kristian.github.io/My-Portfolio/"/>
+  <meta property="og:title" content="Kristian Frroku | Full-Stack Developer"/>
+  <meta property="og:description" content="Portfolio showcasing SaaS, logistics & property-tech projects built with React, Python and cloud-native stacks."/>
+  <meta property="og:image" content="https://6kristian.github.io/My-Portfolio/assets/og-thumb.png"/>
+  <meta property="og:url" content="https://6kristian.github.io/My-Portfolio/"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Dark theme tokens -->
+  <style>
+    :root{
+      --bg:#0d1117;
+      --bg-elev:#161b22;
+      --bg-elev2:#21262d;
+      --accent:#58a6ff;
+      --text:#c9d1d9;
+      --text-muted:#8b949e;
+      --border:#30363d;
+      --font:'Inter',system-ui,sans-serif;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.6}
+    a{color:var(--accent);text-decoration:none}
+    h1,h2,h3{font-weight:600}
+    section{padding:80px 10%}
+    .grid{display:grid;gap:1.5rem}
+    .btn{display:inline-block;padding:.75rem 1.5rem;border:1px solid var(--border);border-radius:6px;transition:.3s}
+    .btn:hover{background:var(--accent);color:#000}
+    header{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:radial-gradient(circle at top right,var(--bg-elev),var(--bg))}
+    header h1{font-size:3rem;margin-bottom:.5rem}
+    header p{color:var(--text-muted)}
+    .socials{margin-top:1.5rem}
+    .socials a{margin:0 .75rem;font-size:1.5rem}
+    .section-title{font-size:2rem;margin-bottom:1.5rem;position:relative}
+    .section-title::after{content:'';position:absolute;left:0;bottom:-8px;width:60px;height:3px;background:var(--accent)}
+    .skills-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .skill-card{background:var(--bg-elev);padding:1.5rem;border-radius:8px;border:1px solid var(--border)}
+    .exp-item{background:var(--bg-elev);margin-bottom:1.5rem;padding:1.5rem;border-left:4px solid var(--accent);border-radius:0 8px 8px 0}
+    .exp-item .meta{color:var(--text-muted);font-size:.9rem}
+    .project-grid{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+    .project-card{background:var(--bg-elev2);border:1px solid var(--border);border-radius:8px;overflow:hidden;transition:.3s}
+    .project-card:hover{transform:translateY(-4px)}
+    .project-card img{width:100%;height:160px;object-fit:cover;background:#222;}
+    .project-card .body{padding:1rem}
+    .tech-tags span{display:inline-block;margin:.25rem .5rem .25rem 0;padding:.2rem .5rem;font-size:.75rem;background:var(--bg-elev);border:1px solid var(--border);border-radius:4px}
+    #contact form{display:grid;gap:1rem}
+    #contact input,#contact textarea{padding:.75rem;background:var(--bg-elev2);border:1px solid var(--border);border-radius:6px;color:var(--text);resize:vertical}
+    footer{text-align:center;padding:2rem 0;border-top:1px solid var(--border)}
+    @media(max-width:600px){section{padding:60px 5%}header h1{font-size:2.5rem}}
+  </style>
+</head>
+
+<body>
+<header id="home">
+  <h1>Kristian Frroku</h1>
+  <p>Full-Stack Developer & Data-Driven Problem Solver</p>
+  <div class="socials">
+    <a href="https://github.com/6kristian" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/kristian-frroku-8a9b121b2" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:frrokuk2@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+  </div>
+  <a href="#projects" class="btn">View My Work</a>
+</header>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <p>Dynamic IT professional with a proven history of delivering revenue growth, process optimization, and scalable web solutions. I blend data-driven decision making with modern full-stack development to create products that both delight users and move business KPIs.</p>
+  <ul>
+    <li>5+ years bridging business and technology across SaaS, logistics, and property-management domains</li>
+    <li>Strong in Python, SQL, JavaScript/TypeScript, React, Node, and cloud-native stacks</li>
+    <li>Power-user of CRM platforms (Salesforce, HubSpot, Zoho) and analytics tooling (GA4, Looker Studio)</li>
+    <li>Fluent in English & Albanian, intermediate German</li>
+  </ul>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Core Skills</h2>
+  <div class="grid skills-grid">
+    <div class="skill-card"><h3>Languages</h3><p>Python • JS/TS • SQL • Bash • HTML/CSS</p></div>
+    <div class="skill-card"><h3>Frameworks</h3><p>React • Next • Node • Express • Flask • FastAPI</p></div>
+    <div class="skill-card"><h3>Data & Cloud</h3><p>PostgreSQL • MongoDB • Redis • Docker • AWS</p></div>
+    <div class="skill-card"><h3>Tooling</h3><p>Git • GitHub Actions • Jest • Cypress • Linux</p></div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2 class="section-title">Experience</h2>
+
+  <div class="exp-item">
+    <h3>Account Manager</h3>
+    <p class="meta">Dfusione | Oct 2024 – Present | Tirana</p>
+    <ul>
+      <li>Managed key accounts, boosting client satisfaction 15 % via targeted engagement.</li>
+      <li>Drove upsell/cross-sell initiatives using CRM analytics, adding 12 % revenue in Q1.</li>
+    </ul>
+  </div>
+
+  <div class="exp-item">
+    <h3>Sales & Customer Relationship Specialist</h3>
+    <p class="meta">Interlane Logistics | May 2024 – Oct 2024 | Tirana</p>
+    <ul>
+      <li>Applied CRM strategies that increased client retention and lifted sales 10 %.</li>
+      <li>Built HubSpot/SQL dashboards to track churn risk.</li>
+    </ul>
+  </div>
+
+  <div class="exp-item">
+    <h3>Project Manager</h3>
+    <p class="meta">Prime Média | Dec 2023 – Apr 2024 | Tirana</p>
+    <ul>
+      <li>Led cross-functional team; lead-gen campaigns raised conversions 15 %.</li>
+      <li>Streamlined workflows, cutting turnaround 20 %.</li>
+    </ul>
+  </div>
+
+  <div class="exp-item">
+    <h3>Business Development Manager</h3>
+    <p class="meta">Interlane Logistics Inc | May 2022 – Oct 2023 | Remote</p>
+    <ul>
+      <li>Increased client acquisition 20 % via targeted research & bespoke outreach.</li>
+      <li>Secured $10 k in new revenue; built Python lead-scoring model that lifted conversions 5 %.</li>
+    </ul>
+  </div>
+
+  <div class="exp-item">
+    <h3>Leasing Coordinator</h3>
+    <p class="meta">Royal York Property Management | Jan 2021 – Mar 2022 | Tirana</p>
+    <ul>
+      <li>Automated workflows, slashing admin load 40 % and doubling booked appointments 80 %.</li>
+      <li>Marketing campaigns drove 7 % rental-income growth.</li>
+    </ul>
+  </div>
+
+  <div class="exp-item">
+    <h3>Event Planner</h3>
+    <p class="meta">Super Monkeys Albania | Oct 2019 – Nov 2020 | Tirana</p>
+    <ul>
+      <li>Organised 30+ events (up to €25 k budgets), cut vendor costs 12 %.</li>
+    </ul>
+  </div>
+
+  <div class="exp-item">
+    <h3>Front-End Developer</h3>
+    <p class="meta">Albanian Business Partner | Jan 2019 – Aug 2019 | Tirana</p>
+    <ul>
+      <li>Built React & Django REST CMS, cutting maintenance costs 10 %.</li>
+      <li>Lighthouse 62 → 94, boosting engagement 13 %.</li>
+    </ul>
+  </div>
+
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Open-Source Work</h2>
+  <div class="grid project-grid">
+    <!-- — Personal-Expense-Tracker -->
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1554224155-3a0892a22ae0?auto=format&fit=crop&w=600&q=60" loading="lazy" alt="Expense Tracker" />
+      <div class="body">
+        <h3>Personal-Expense-Tracker</h3>
+        <p>OCR receipt upload, AI categorisation, weekly forecasts.</p>
+        <div class="tech-tags"><span>Python</span><span>Flask</span><span>React</span><span>Docker</span></div>
+        <a href="https://github.com/6kristian/Personal-Expense-Tracker" target="_blank">Code</a> | <a href="https://expense.kfrroku.live" target="_blank">Live</a>
+      </div>
+    </div>
+
+    <!-- — Weather-App -->
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=600&q=60" loading="lazy" alt="Weather App" />
+      <div class="body">
+        <h3>Weather-App</h3>
+        <p>PWA with 5-day forecast & radar tiles.</p>
+        <div class="tech-tags"><span>JavaScript</span><span>PWA</span></div>
+        <a href="https://github.com/6kristian/Weather-App" target="_blank">Code</a> | <a href="https://6kristian.github.io/Weather-App/" target="_blank">Live</a>
+      </div>
+    </div>
+
+    <!-- — Notepad-KF -->
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1590602489899-600929aac657?auto=format&fit=crop&w=600&q=60" loading="lazy" alt="Notepad-KF" />
+      <div class="body">
+        <h3>Notepad-KF</h3>
+        <p>Cross-platform notepad with AES-256 encryption.</p>
+        <div class="tech-tags"><span>Python</span><span>Tkinter</span></div>
+        <a href="https://github.com/6kristian/Notepad-KF" target="_blank">Code</a>
+      </div>
+    </div>
+
+    <!-- — Hangman-Game-Program -->
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1606092195730-5d7b9c1e5a47?auto=format&fit=crop&w=600&q=60" loading="lazy" alt="Hangman" />
+      <div class="body">
+        <h3>Hangman-Game-Program</h3>
+        <p>Classic word-guesser with leaderboard.</p>
+        <div class="tech-tags"><span>Python</span></div>
+        <a href="https://github.com/6kristian/Hangman-Game-Program" target="_blank">Code</a>
+      </div>
+    </div>
+
+    <!-- — Digital-Clock-GUI -->
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1590602489899-600929aac657?auto=format&fit=crop&w=600&q=60" loading="lazy" alt="Digital Clock" />
+      <div class="body">
+        <h3>Digital-Clock-GUI</h3>
+        <p>Always-on-top digital clock with themes.</p>
+        <div class="tech-tags"><span>Python</span></div>
+        <a href="https://github.com/6kristian/Digital-Clock-GUI" target="_blank">Code</a>
+      </div>
+    </div>
+
+    <!-- — Stopwatch-GUI -->
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1506773090264-ac0b07293a64?auto=format&fit=crop&w=600&q=60" loading="lazy" alt="Stopwatch" />
+      <div class="body">
+        <h3>Stopwatch-GUI</h3>
+        <p>Stopwatch with lap times & CSV export.</p>
+        <div class="tech-tags"><span>Python</span></div>
+        <a href="https://github.com/6kristian/Stopwatch-GUI" target="_blank">Code</a>
+      </div>
+    </div>
+
+    <!-- — Slots-Machine-GUI -->
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1623479322729-28b25c16b011?auto=format&fit=crop&w=600&q=60" loading="lazy" alt="Slots" />
+      <div class="body">
+        <h3>Slots-Machine-GUI</h3>
+        <p>Vegas slot with animated reels & sound.</p>
+        <div class="tech-tags"><span>Python</span><span>Pygame</span></div>
+        <a href="https://github.com/6kristian/Slots-Machine-GUI" target="_blank">Code</a>
+      </div>
+    </div>
+
+    <!-- — Pokémon-API-Program -->
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1613771404721-1f92d799e49f?auto=format&fit=crop&w=600&q=60" loading="lazy" alt="Pokémon" />
+      <div class="body">
+        <h3>Pokémon-API-Program</h3>
+        <p>CLI tool for Pokédex stats & evolutions.</p>
+        <div class="tech-tags"><span>Python</span><span>PokéAPI</span></div>
+        <a href="https://github.com/6kristian/Pokemon-API-Program" target="_blank">Code</a>
+      </div>
+    </div>
+
+    <!-- — Pasta-Maker -->
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1621996346565-e3dbc353d2e1?auto=format&fit=crop&w=600&q=60" loading="lazy" alt="Pasta" />
+      <div class="body">
+        <h3>Pasta-Maker</h3>
+        <p>Cooking simulator with timers & scores.</p>
+        <div class="tech-tags"><span>Python</span></div>
+        <a href="https://github.com/6kristian/Pasta-Maker" target="_blank">Code</a>
+      </div>
+    </div>
+
+    <!-- — Password-Protected-PDF -->
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=60" loading="lazy" alt="PDF Lock" />
+      <div class="body">
+        <h3>Password-Protected-PDF</h3>
+        <p>AES-256 encrypt/decrypt any PDF via GUI.</p>
+        <div class="tech-tags"><span>Python</span></div>
+        <a href="https://github.com/6kristian/Password-Protected-PDF" target="_blank">Code</a>
+      </div>
+    </div>
+
+    <!-- — LinkedIn-Follow-Bot -->
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1611944212129-29977ae1398c?auto=format&fit=crop&w=600&q=60" loading="lazy" alt="LinkedIn" />
+      <div class="body">
+        <h3>LinkedIn-Follow-Bot</h3>
+        <p>Ethical automation with rate-limiting.</p>
+        <div class="tech-tags"><span>Python</span><span>Selenium</span></div>
+        <a href="https://github.com/6kristian/Linkedin-Follow-Bot" target="_blank">Code</a>
+      </div>
+    </div>
+
+    <!-- — Automated-Email-Script -->
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?auto=format&fit=crop&w=600&q=60" loading="lazy" alt="Email" />
+      <div class="body">
+        <h3>Automated-Email-Script</h3>
+        <p>Bulk personalized mails via Gmail SMTP.</p>
+        <div class="tech-tags"><span>Python</span></div>
+        <a href="https://github.com/6kristian/Automated-Email-Script" target="_blank">Code</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Get In Touch</h2>
+  <p>Open to full-stack, data-engineering or product roles.</p>
+  <form action="https://formspree.io/f/movlggzg" method="POST">
+    <input type="text" name="name" placeholder="Name" required/>
+    <input type="email" name="email" placeholder="Email" required/>
+    <textarea name="message" rows="5" placeholder="Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Kristian Frroku</p>
+</footer>
+
+<!-- Cookie consent -->
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+<script>
+window.cookieconsent.initialise({
+  palette:{popup:{background:"#161b22"},button:{background:"#58a6ff"}},
+  content:{message:"This site uses cookies.",dismiss:"Got it!"}
+});
+</script>
+</body>
+</html>
