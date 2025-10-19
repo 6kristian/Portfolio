@@ -325,11 +325,17 @@ Leveraging technology to automate processes, secure systems, and drive business 
 <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
 <script>
 window.cookieconsent.initialise({
-  palette:{popup:{background:"#161b22"},button:{background:"#58a6ff"}},
+  palette:{popup:{background:"#161b22"},button:{background:"#6CB6FF"}},
   content:{message:"This site uses cookies.",dismiss:"Got it!"}
 });
+</script>
+
+<!-- Service worker -->
+<script>
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js');
 </script>
 </body>
 
 </html>
+
 
