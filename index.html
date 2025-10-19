@@ -40,6 +40,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
   <link rel="preload" href="assets/og-thumb.webp" as="image">
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-…" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#6CB6FF">
   
@@ -47,11 +48,7 @@
   <!-- Dark theme tokens -->
   <style>
     :root{
-      .fab{/* brand icons */}
-      .fa-github:before{content:"\f09b"}
-      .fa-linkedin:before{content:"\f08c"}
-      .fas{/* solid icons */}
-      .fa-envelope:before{content:"\f0e0"}
+      
       --bg:#0d1117;
       --bg-elev:#161b22;
       --bg-elev2:#21262d;
@@ -97,6 +94,13 @@
       outline-offset:2px;
 }
   </style>
+  <!-- Icon font glyphs -->
+  <style>
+    .fab,.fas{display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1}
+    .fa-github:before{content:"\f09b"}
+    .fa-linkedin:before{content:"\f08c"}
+    .fa-envelope:before{content:"\f0e0"}
+  </style>
 </head>
 
 <body>
@@ -115,6 +119,7 @@
   <h2 class="section-title">About Me</h2>
   <p>IT Professional | Python | SQL | DevOps | Cybersecurity
 Leveraging technology to automate processes, secure systems, and drive business efficiency. Proven in IT support, project management, and developing practical tools. Open to new challenges.</p>
+  <a href="#contact" class="btn">Hire me to harden your stack</a>
   <ul>
     <li>5+ years bridging business and technology across SaaS, logistics, and property-management domains</li>
     <li>Strong in Python, SQL, JavaScript/TypeScript, React, Node, and cloud-native stacks</li>
@@ -214,10 +219,13 @@ Leveraging technology to automate processes, secure systems, and drive business 
   <h2 class="section-title">Open-Source Work</h2>
   <div class="grid project-grid">
 
-  <!-- Flagship -->
+  <!-- Linux hardening tool -->
   <div class="project-card">
-    <img src="assets/linux-harden.png" alt="Linux Security Hardening Tool" width="600" height="160"/>
-    <div class="body">
+<!-- Linux hardening card -->
+<div class="project-card">
+  <div aria-hidden="true" style="height:160px;background:linear-gradient(135deg,#161b22 0%, #30363d 100%);display:flex;align-items:center;justify-content:center;font-size:3rem">🔒</div>
+  <div class="body"> ... </div>
+</div>    <div class="body">
       <h3>Linux Security Hardening Tool</h3>
       <p>Automated CIS benchmark patching, Dockerised for any distro. Used in prod at JKMoving.</p>
       <div class="tech-tags"><span>Python</span><span>Docker</span><span>Ansible</span></div>
@@ -234,11 +242,11 @@ Leveraging technology to automate processes, secure systems, and drive business 
       <p>OCR receipt upload, AI categorisation, weekly forecasts. 400+ active users.</p>
       <div class="tech-tags"><span>Python</span><span>Flask</span><span>React</span><span>Docker</span></div>
       <a href="https://github.com/6kristian/Personal-Expense-Tracker" target="_blank">Code</a> |
-      <a href="https://expense.kfrroku.live" target="_blank">Live</a>
+      <a href="https://personal-expense-tracker-enzs.onrender.com/" target="_blank">Live</a>
     </div>
   </div>
 
-  <!-- Crypto utility -->
+  <!-- Password protection  -->
   <div class="project-card">
     <img src="assets/pdf-lock.png" alt="Password Protected PDF" width="600" height="160"/>
     <div class="body">
@@ -250,7 +258,7 @@ Leveraging technology to automate processes, secure systems, and drive business 
     </div>
   </div>
 
-  <!-- Business automation -->
+  <!-- Business email automation -->
   <div class="project-card">
     <img src="assets/email-bot.png" alt="Automated Email Script" width="600" height="160"/>
     <div class="body">
@@ -269,6 +277,17 @@ Leveraging technology to automate processes, secure systems, and drive business 
       <p>Rate-limited connection requests with mutual-interest scoring. Compliant with LinkedIn ToS.</p>
       <div class="tech-tags"><span>Python</span><span>Selenium</span><span>Typer</span></div>
       <a href="https://github.com/6kristian/Linkedin-Follow-Bot" target="_blank">Code</a>
+    </div>
+  </div>
+
+    <!--Portfolio-->
+    <div class="project-card">
+    <img src="assets/linkedin-bot.png" alt="Ethical LinkedIn Outreach Bot" width="600" height="160"/>
+    <div class="body">
+      <h3>Portfolio</h3>
+      <p>My portfolio</p>
+      <div class="tech-tags"><span>HTML</span><span>CSS</span><span>Javascript</span></div>
+      <a href="https://github.com/6kristian/Portfolio" target="_blank">Code</a>
     </div>
   </div>
 
@@ -339,6 +358,7 @@ window.cookieconsent.initialise({
 </body>
 
 </html>
+
 
 
 
