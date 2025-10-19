@@ -1,8 +1,6 @@
 Kristian Frroku – Full-Stack Dev & SysAdmin
-> Portfolio repo | [Live Site](https://6kristian.github.io/Portfolio/)
+> [Portfolio repo](https://github.com/6kristian/Portfolio) | [Live Site](https://6kristian.github.io/Portfolio/)
 
-
-![GitHub Pages](https://github.com/6kristian/Portfolio/workflows/CI/badge.svg)
 ![Lighthouse](https://img.shields.io/badge/Lighthouse-100%25-success.svg?logo=lighthouse)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
