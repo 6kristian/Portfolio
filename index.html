@@ -3,364 +3,249 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kristian Frroku | Full-Stack Developer</title>
+  <title>Kristian Frroku | Logistics Professional</title>
   
-  <!-- Structured Data for SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Kristian Frroku",
-    "jobTitle": "Full-Stack Developer & SysAdmin",
-    "url": "https://6kristian.github.io/My-Portfolio/",
-    "sameAs": [
-      "https://linkedin.com/in/kristian-frroku-8a9b121b2",
-      "https://github.com/6kristian"
-    ],
-    "knowsAbout": ["Python", "React", "AWS", "Docker", "DevOps"]
-  }
-  </script>
-
-  <!-- SEO & Open Graph -->
-  <meta name="description" content="Kristian Frroku – Full-stack developer & data-driven problem solver. Python, React, Node, AWS."/>
-  <link rel="canonical" href="https://6kristian.github.io/My-Portfolio/"/>
-  <meta property="og:title" content="Kristian Frroku | Full-Stack Developer"/>
-  <meta property="og:description" content="Portfolio showcasing SaaS, logistics & property-tech projects built with React, Python and cloud-native stacks."/>
-  <meta property="og:image" content="https://6kristian.github.io/My-Portfolio/assets/og-thumb.png"/>
-  <meta property="og:url" content="https://6kristian.github.io/My-Portfolio/"/>
-  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="description" content="Kristian Frroku – Logistics Operations Professional. Specialized in dispatch, fleet management, and CRM automation."/>
   
-  <!-- Security: Strict Content Security Policy -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://formspree.io;">
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-
-  <!-- Performance & Assets -->
-  <link rel="preload" href="assets/og-thumb.png" as="image"/>
+  <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
-  <link rel="preload" href="assets/og-thumb.webp" as="image">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-  <link rel="manifest" href="/manifest.json">
-  <meta name="theme-color" content="#6CB6FF">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   
-  <!-- Dark theme tokens & CSS Architecture -->
   <style>
+    /* Clean, Professional Corporate CSS - No "AI" elements */
     :root {
-      --bg: #0d1117;
-      --bg-elev: #161b22;
-      --bg-elev2: #21262d;
-      --accent: #6CB6FF;
-      --text: #c9d1d9;
-      --text-muted: #8b949e;
-      --border: #30363d;
+      --bg-color: #f3f4f6; /* Light gray background */
+      --surface: #ffffff; /* Pure white cards */
+      --text-main: #111827; /* Dark slate text */
+      --text-muted: #4b5563; /* Medium slate */
+      --border: #e5e7eb;
+      --primary: #1d4ed8; /* Professional solid blue */
+      --primary-hover: #1e40af;
       --font: 'Inter', system-ui, sans-serif;
     }
+    
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body { background: var(--bg); color: var(--text); font-family: var(--font); line-height: 1.6; }
-    a { color: var(--accent); text-decoration: none; }
-    h1, h2, h3 { font-weight: 600; }
-    section { padding: 80px 10%; }
-    .grid { display: grid; gap: 1.5rem; }
+    body { 
+      background-color: var(--bg-color); 
+      color: var(--text-main); 
+      font-family: var(--font); 
+      line-height: 1.6; 
+    }
     
-    /* Accessibility: Focus states */
-    .btn:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    a { color: var(--primary); text-decoration: none; transition: color 0.2s; }
+    a:hover { color: var(--primary-hover); text-decoration: underline; }
+    h1, h2, h3 { font-weight: 700; color: var(--text-main); }
     
-    .btn { display: inline-block; padding: .75rem 1.5rem; border: 1px solid var(--border); border-radius: 6px; transition: .3s; }
-    .btn:hover { background: var(--accent); color: #000; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 0 1.5rem; }
+    section { padding: 5rem 0; border-bottom: 1px solid var(--border); }
+    section:last-of-type { border-bottom: none; }
     
-    header { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: radial-gradient(circle at top right, var(--bg-elev), var(--bg)); }
-    header h1 { font-size: 3rem; margin-bottom: .5rem; }
-    header p { color: var(--text-muted); }
-    .socials { margin-top: 1.5rem; margin-bottom: 1.5rem; }
-    .socials a { margin: 0 .75rem; font-size: 1.5rem; }
-    
-    .section-title { font-size: 2rem; margin-bottom: 1.5rem; position: relative; }
-    .section-title::after { content: ''; position: absolute; left: 0; bottom: -8px; width: 60px; height: 3px; background: var(--accent); }
-    
-    /* O(1) CSS Selectors */
-    .skills-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
-    .skill-card { background: var(--bg-elev); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border); }
-    
-    .exp-item { background: var(--bg-elev); margin-bottom: 1.5rem; padding: 1.5rem; border-left: 4px solid var(--accent); border-radius: 0 8px 8px 0; }
-    .exp-item .meta { color: var(--text-muted); font-size: .9rem; }
-    
-    .project-grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
-    .project-card { background: var(--bg-elev2); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; transition: .3s; display: flex; flex-direction: column; }
-    .project-card:hover { transform: translateY(-4px); }
-    .project-card .body { padding: 1rem; flex-grow: 1; }
-    
-    .tech-tags span { display: inline-block; margin: .25rem .5rem .25rem 0; padding: .2rem .5rem; font-size: .75rem; background: var(--bg-elev); border: 1px solid var(--border); border-radius: 4px; }
-    
-    #contact form { display: grid; gap: 1rem; }
-    #contact input, #contact textarea { padding: .75rem; background: var(--bg-elev2); border: 1px solid var(--border); border-radius: 6px; color: var(--text); resize: vertical; }
-    footer { text-align: center; padding: 2rem 0; border-top: 1px solid var(--border); }
-    
-    @media(max-width:600px) { section { padding: 60px 5%; } header h1 { font-size: 2.5rem; } }
-  </style>
+    /* Buttons */
+    .btn-group { display: flex; gap: 1rem; margin-top: 1.5rem; }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-weight: 500;
+      text-decoration: none !important;
+      transition: background-color 0.2s, color 0.2s;
+      border: 1px solid transparent;
+      cursor: pointer;
+    }
+    .btn-primary { background-color: var(--primary); color: #ffffff !important; }
+    .btn-primary:hover { background-color: var(--primary-hover); }
+    .btn-secondary { background-color: #ffffff; color: var(--text-main) !important; border-color: var(--border); }
+    .btn-secondary:hover { background-color: #f9fafb; border-color: #d1d5db; }
 
-  <!-- Icon font glyphs -->
-  <style>
-    .fab, .fas { display: inline-block; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1; }
-    .fa-github:before { content: "\f09b"; }
-    .fa-linkedin:before { content: "\f08c"; }
-    .fa-envelope:before { content: "\f0e0"; }
+    /* Header / Hero */
+    header { padding: 6rem 0; text-align: left; border-bottom: 1px solid var(--border); background-color: var(--surface); }
+    header h1 { font-size: 3rem; margin-bottom: 0.5rem; letter-spacing: -0.02em; }
+    header p { color: var(--text-muted); font-size: 1.25rem; max-width: 600px; margin-bottom: 1.5rem; }
+    .socials { display: flex; gap: 1rem; margin-bottom: 2rem; }
+    .socials a { font-size: 1.5rem; color: var(--text-muted); text-decoration: none; }
+    .socials a:hover { color: var(--primary); text-decoration: none; }
+
+    /* Titles */
+    .section-title { font-size: 2rem; margin-bottom: 2rem; }
+    
+    /* Grids & Cards */
+    .grid { display: grid; gap: 1.5rem; }
+    .skills-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    
+    .card {
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    
+    .card h3 { margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; font-size: 1.2rem; }
+    .card h3 i { color: var(--primary); font-size: 1.1rem; }
+    .card p { color: var(--text-muted); font-size: 0.95rem; }
+
+    /* Experience */
+    .exp-item { margin-bottom: 2rem; padding-left: 1.5rem; border-left: 3px solid var(--primary); }
+    .exp-item:last-child { margin-bottom: 0; }
+    .exp-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem; }
+    .exp-title { font-size: 1.25rem; font-weight: 600; }
+    .exp-company { color: var(--text-muted); font-weight: 500; }
+    .exp-date { font-size: 0.9rem; color: var(--text-muted); }
+    .exp-item ul { margin-left: 1.25rem; color: var(--text-main); margin-top: 0.5rem; }
+    .exp-item li { margin-bottom: 0.4rem; font-size: 0.95rem; }
+
+    /* Form */
+    form { display: grid; gap: 1rem; max-width: 500px; }
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+    input:focus, textarea:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 2px rgba(29, 78, 216, 0.2); }
+    
+    footer { text-align: center; padding: 2rem 0; color: var(--text-muted); font-size: 0.9rem; background-color: var(--surface); border-top: 1px solid var(--border); }
+    
+    @media(max-width: 768px) {
+      header h1 { font-size: 2.25rem; }
+      .exp-header { flex-direction: column; align-items: flex-start; }
+    }
   </style>
 </head>
 
 <body>
   <header id="home">
-    <h1>Kristian Frroku</h1>
-    <p>SysAdmin · Full-Stack Developer</p>
-    <div class="socials">
-      <a href="https://github.com/6kristian" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/kristian-frroku-8a9b121b2" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:frrokuk2@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-    </div>
-    <div>
-      <a href="#projects" class="btn" style="margin-bottom: 1rem;">View My Work</a><br>
-      <a href="#contact" class="btn">Hire me</a>
+    <div class="container">
+      <h1>Kristian Frroku</h1>
+      <p>Logistics Operations & Dispatch Professional</p>
+      
+      <div class="socials">
+        <a href="https://linkedin.com/in/kfrroku/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:frrokuk2@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      
+      <div class="btn-group">
+        <a href="#experience" class="btn btn-primary">View Experience</a>
+        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+      </div>
     </div>
   </header>
 
-  <!-- Semantic Main Wrapper -->
-  <main id="main-content">
-    <section id="about">
-      <h2 class="section-title">About Me</h2>
-      <p>IT Professional | Python | SQL | DevOps | Cybersecurity<br>
-      Leveraging technology to automate processes, secure systems, and drive business efficiency. Proven in IT support, project management, and developing practical tools. Open to new challenges.</p>
-      <ul>
-        <li>5+ years bridging business and technology across SaaS, logistics, and property-management domains</li>
-        <li>Strong in Python, SQL, JavaScript/TypeScript, React, Node, and cloud-native stacks</li>
-        <li>Power-user of CRM platforms (Salesforce, HubSpot, Zoho) and analytics tooling (GA4, Looker Studio)</li>
-        <li>Fluent in English & Albanian, intermediate German</li>
-      </ul>
-    </section>
-
-    <section id="skills">
-      <h2 class="section-title">Core Skills</h2>
+  <main>
+    <section id="skills" class="container">
+      <h2 class="section-title">Core Competencies</h2>
       <div class="grid skills-grid">
-        <article class="skill-card"><h3>Languages</h3><p>Python • JS/TS • SQL • Bash • HTML/CSS</p></article>
-        <article class="skill-card"><h3>Frameworks</h3><p>React • Next • Node • Express • Flask • FastAPI</p></article>
-        <article class="skill-card"><h3>Data & Cloud</h3><p>PostgreSQL • MongoDB • Redis • Docker • AWS</p></article>
-        <article class="skill-card"><h3>Tooling</h3><p>Git • GitHub Actions • Jest • Cypress • Linux</p></article>
-        <article class="skill-card"><h3>DevOps & Cloud</h3><p>Docker • AWS • Redis • CI/CD • Nginx</p></article>
+        <div class="card">
+          <h3><i class="fas fa-truck"></i> Operations & Logistics</h3>
+          <p>Fleet Management (Motive Telematics), Route Optimization, Supply Chain Workflows, Commercial Billing Operations, Fleet Logistics.</p>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-server"></i> Systems & Automation</h3>
+          <p>Linux/Windows Systems Administration, Python Scripting, Database Operations (SQL), Docker, IAM, Backup & Recovery.</p>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-cogs"></i> CRM & Platforms</h3>
+          <p>Salesforce, Zoho CRM, HubSpot, Jira, Zendesk, Git, GitHub, Wireshark, Networking (TCP/IP).</p>
+        </div>
       </div>
     </section>
 
-    <section id="experience">
-      <h2 class="section-title">Experience</h2>
-
-      <article class="exp-item">
-        <h3>SysAdmin / Move Coordinator</h3>
-        <p class="meta">JKMoving Services | Dec 2024 – Present | Tirana</p>
-        <ul>
-          <li>Manage end-to-end client logistics via digital scheduling & payment platforms.</li>
-          <li>Process $100 000+ monthly transactions with 100 % accuracy using automated invoicing tools.</li>
-          <li>Maintain company IT infra (Windows, Linux, LAN/WAN) – 0 unplanned outages since hire.</li>
-          <li>Develop security policies & access controls to protect client & company data.</li>
-        </ul>
-      </article>
-
-      <article class="exp-item">
-        <h3>IT Support Specialist</h3>
-        <p class="meta">Softexpres | Oct 2024 – Jan 2025 | Tirana</p>
-        <ul>
-          <li>Created Python scripts for automated DB uploads/downloads & backups, cutting recovery time 40 %.</li>
-          <li>Installed/configured network devices & fiscalisation software for 30+ retail clients.</li>
-          <li>Delivered on-site training & tier-1/2 support, raising user adoption 25 %.</li>
-        </ul>
-      </article>
-
-      <article class="exp-item">
-        <h3>Project Manager</h3>
-        <p class="meta">JQL CARGO | Dec 2023 – Oct 2024 | Tirana</p>
-        <ul>
-          <li>Led cross-functional squad to deploy digital lead-gen tools, lifting conversion 15 %.</li>
-          <li>Streamlined workflows in Zoho + automation, slashing delivery time 10 %.</li>
-          <li>Executed data-driven market analysis that informed tech roadmap & pricing strategy.</li>
-        </ul>
-      </article>
-
-      <article class="exp-item">
-        <h3>Business Development Manager</h3>
-        <p class="meta">Interlane Logistics Inc | May 2022 – Oct 2023 | Remote</p>
-        <ul>
-          <li>Used CRM analytics (Salesforce/HubSpot) to pinpoint high-value leads → 20 % uplift in acquisition.</li>
-          <li>Built automated outreach sequences (Python + Gmail SMTP) that generated $10 000 new revenue.</li>
-          <li>Digitalised client onboarding (Typeform → Airtable → HubSpot), improving conversion 5 %.</li>
-        </ul>
-      </article>
-
-      <article class="exp-item">
-        <h3>Operations & Tech-Enabled Leasing Coordinator</h3>
-        <p class="meta">Royal York Property Management | Jan 2021 – Mar 2022 | Tirana</p>
-        <ul>
-          <li>Automated leasing workflows via CRM + spreadsheets, cutting admin tasks 30 %.</li>
-          <li>Implemented digital booking system & geo-insights dashboard → 80 % jump in booked appointments.</li>
-          <li>Data tracking increased occupancy & rental income 7 % QoQ.</li>
-        </ul>
-      </article>
-
-      <article class="exp-item">
-        <h3>IT Support Specialist</h3>
-        <p class="meta">Freelance / Part-time | Oct 2019 – Nov 2020 | Tirana</p>
-        <ul>
-          <li>Provided tier-1/2 support for hardware, software & network issues (Windows, Office 365, LAN).</li>
-          <li>Performed system installs, updates & security monitoring for 50+ endpoints.</li>
-          <li>Documented KB articles that reduced repeat tickets 18 %.</li>
-        </ul>
-      </article>
-
-      <article class="exp-item">
-        <h3>Front-End Developer</h3>
-        <p class="meta">Albanian Business Partner | Jan 2019 – Aug 2019 | Tirana</p>
-        <ul>
-          <li>Developed responsive CMS (HTML, CSS, JS, Django REST) cutting maintenance costs 10 %.</li>
-          <li>Optimised UI/UX & code quality → 13 % rise in user engagement (Google Analytics).</li>
-          <li>Lighthouse score 62 → 94 on mobile.</li>
-        </ul>
-      </article>
-    </section>
-
-    <section id="projects">
-      <h2 class="section-title">Open-Source Work</h2>
-      <div class="grid project-grid">
-
-        <!-- Linux hardening tool (Malformed HTML Fixed) -->
-        <article class="project-card">
-          <div aria-hidden="true" style="height:160px;background:linear-gradient(135deg,var(--bg-elev) 0%,var(--border) 100%)"></div>
-          <div class="body">
-            <h3>Linux Security Hardening Tool</h3>
-            <p>Automated CIS benchmark patching, Dockerised for any distro. Used in prod at JKMoving.</p>
-            <div class="tech-tags"><span>Python</span><span>Docker</span><span>Ansible</span></div>
-            <a href="https://github.com/6kristian/linux-security-hardening-tool" target="_blank" rel="noopener noreferrer">Code</a> |
-            <a href="https://hub.docker.com/r/kristian6/linux-harden-tool/" target="_blank" rel="noopener noreferrer">Docker Hub</a>
+    <section id="experience" class="container">
+      <h2 class="section-title">Professional Experience</h2>
+      
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <div class="exp-title">Truck Dispatcher</div>
+            <div class="exp-company">KA Logistics – Tiranë</div>
           </div>
-        </article>
+          <div class="exp-date">Nov 2025 - Present</div>
+        </div>
+        <ul>
+          <li>Generated $40,000 in average weekly gross revenue and reduced fleet wait times by 15% by executing real-time route optimization for 6 simultaneous truck routes.</li>
+          <li>Achieved zero missed trips over a 6-month period by actively tracking live fleet operations utilizing Motive telematics software.</li>
+          <li>Resolved 50+ high-priority escalations per shift by implementing emergency dispatch protocols and direct driver coordination.</li>
+        </ul>
+      </div>
 
-        <!-- Live SaaS -->
-        <article class="project-card">
-          <div aria-hidden="true" style="height:160px;background:linear-gradient(135deg,var(--bg-elev) 0%,var(--border) 100%)"></div>
-          <div class="body">
-            <h3>Personal Expense Tracker</h3>
-            <p>OCR receipt upload, AI categorisation, weekly forecasts. 400+ active users.</p>
-            <div class="tech-tags"><span>Python</span><span>Flask</span><span>React</span><span>Docker</span></div>
-            <a href="https://github.com/6kristian/Personal-Expense-Tracker" target="_blank" rel="noopener noreferrer">Code</a> |
-            <a href="https://personal-expense-tracker-enzs.onrender.com/" target="_blank" rel="noopener noreferrer">Live</a>
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <div class="exp-title">Moving Operations Coordinator</div>
+            <div class="exp-company">JK Moving Services – Tiranë</div>
           </div>
-        </article>
+          <div class="exp-date">Dec 2024 - Dec 2025</div>
+        </div>
+        <ul>
+          <li>Processed over $100,000 in monthly logistics transactions with 100% accuracy by implementing and managing automated database billing systems.</li>
+          <li>Maintained 99.9% uptime for critical dispatch and moving operations by designing Identity & Access Management (IAM) controls across multi-platform IT infrastructures.</li>
+        </ul>
+      </div>
 
-        <!-- Password protection -->
-        <article class="project-card">
-          <div aria-hidden="true" style="height:160px;background:linear-gradient(135deg,var(--bg-elev) 0%,var(--border) 100%)"></div>
-          <div class="body">
-            <h3>Password Protected PDF</h3>
-            <p>AES-256 encrypt/decrypt any PDF via drag-and-drop GUI. Zero dependencies binary.</p>
-            <div class="tech-tags"><span>Python</span><span>Cryptography</span><span>TKinter</span></div>
-            <a href="https://github.com/6kristian/Password-Protected-PDF" target="_blank" rel="noopener noreferrer">Code</a> |
-            <a href="https://github.com/6kristian/Password-Protected-PDF/releases" target="_blank" rel="noopener noreferrer">Download</a>
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <div class="exp-title">Project Manager</div>
+            <div class="exp-company">JQL CARGO – Tiranë</div>
           </div>
-        </article>
+          <div class="exp-date">Dec 2023 - Oct 2024</div>
+        </div>
+        <ul>
+          <li>Cut cargo delivery turnaround times by 10% by structuring supply chain workflows and automating processing architectures within Zoho CRM.</li>
+          <li>Increased operational conversion rates by 15% by leading a cross-functional logistics team to integrate digital lead generation tools into daily workflows.</li>
+        </ul>
+      </div>
 
-        <!-- Business email automation -->
-        <article class="project-card">
-          <div aria-hidden="true" style="height:160px;background:linear-gradient(135deg,var(--bg-elev) 0%,var(--border) 100%)"></div>
-          <div class="body">
-            <h3>Automated Email Script</h3>
-            <p>Bulk personalised Gmail SMTP mailer with CSV merge & unsubscribe handler. 28 % open-rate uplift.</p>
-            <div class="tech-tags"><span>Python</span><span>Gmail API</span></div>
-            <a href="https://github.com/6kristian/Automated-Email-Script" target="_blank" rel="noopener noreferrer">Code</a>
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <div class="exp-title">Business Development Manager</div>
+            <div class="exp-company">Interlane Logistics Inc – Remote</div>
           </div>
-        </article>
-
-        <!-- Ethical outreach -->
-        <article class="project-card">
-          <div aria-hidden="true" style="height:160px;background:linear-gradient(135deg,var(--bg-elev) 0%,var(--border) 100%)"></div>
-          <div class="body">
-            <h3>Ethical LinkedIn Outreach Bot</h3>
-            <p>Rate-limited connection requests with mutual-interest scoring. Compliant with LinkedIn ToS.</p>
-            <div class="tech-tags"><span>Python</span><span>Selenium</span><span>Typer</span></div>
-            <a href="https://github.com/6kristian/Linkedin-Follow-Bot" target="_blank" rel="noopener noreferrer">Code</a>
-          </div>
-        </article>
-
-        <!-- Portfolio -->
-        <article class="project-card">
-          <div aria-hidden="true" style="height:160px;background:linear-gradient(135deg,var(--bg-elev) 0%,var(--border) 100%)"></div>
-          <div class="body">
-            <h3>Portfolio</h3>
-            <p>My portfolio architecture.</p>
-            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>Javascript</span></div>
-            <a href="https://github.com/6kristian/Portfolio" target="_blank" rel="noopener noreferrer">Code</a> |
-            <a href="https://6kristian.github.io/Portfolio" target="_blank" rel="noopener noreferrer">Live</a>
-          </div>
-        </article>
-
-        <!-- Utility tool -->
-        <article class="project-card">
-          <div aria-hidden="true" style="height:160px;background:linear-gradient(135deg,var(--bg-elev) 0%,var(--border) 100%)"></div>
-          <div class="body">
-            <h3>Notepad-KF</h3>
-            <p>Cross-platform notepad with AES-256 encryption and secure shred. Portable single executable.</p>
-            <div class="tech-tags"><span>Python</span><span>TKinter</span><span>Cryptography</span></div>
-            <a href="https://github.com/6kristian/Notepad-KF" target="_blank" rel="noopener noreferrer">Code</a>
-          </div>
-        </article>
-
+          <div class="exp-date">May 2022 - Oct 2023</div>
+        </div>
+        <ul>
+          <li>Boosted B2B logistics customer acquisitions by 20% by analyzing Salesforce and HubSpot CRM data pipelines to target high-potential shipping accounts.</li>
+          <li>Generated $10,000 in new recurring revenue and increased onboarding conversions by 5% by engineering automated customer outreach sequences.</li>
+        </ul>
       </div>
     </section>
 
-    <!-- Certs -->
-    <section id="certs">
-      <h2 class="section-title">Certifications</h2>
-      <ul>
-        <li>CS50's Introduction to Computer Science - Harvard (2025)</li>
-        <li>DevOps Foundations – Microsoft (2025)</li>
-        <li>Introduction to Devops - Microsoft (2025)</li>
-        <li>Python Essentials 1 – Cisco (2025)</li>
-        <li>Hardware and Upgrade Support – Cisco (2025)</li>
-        <li>Junior Cybersecurity Analyst Career Path – Cisco (2025)</li>
-        <li>Linux Essentials – Cisco (2025)</li>
-        <li>Computer Hardware Basics – Cisco (2025)</li>
-        <li>Ethical Hacker – Cisco (2025)</li>
-        <li>Introduction to Cybersecurity – Cisco (2025)</li>
-        <li>Operating System Basics - Cisco (2025)</li>
-      </ul>
+    <section id="education" class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <div class="exp-title">Bachelor in Information Technology</div>
+            <div class="exp-company">Mediterranean University of Albania</div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2 class="section-title">Get In Touch</h2>
-      <p>Open to full-stack, data-engineering or product roles.</p>
+    <section id="contact" class="container">
+      <h2 class="section-title">Contact</h2>
+      <p style="margin-bottom: 1.5rem; color: var(--text-muted);">Open to opportunities in logistics operations, dispatching, and supply chain management.</p>
+      
       <form action="https://formspree.io/f/movlggzg" method="POST">
-        <!-- Honeypot for simple bot mitigation -->
         <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none">
-        
-        <input type="text" name="name" placeholder="Name" autocomplete="name" required>
-        <input type="email" name="email" placeholder="Email" autocomplete="email" required>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
         <textarea name="message" rows="5" placeholder="Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
+        <button type="submit" class="btn btn-primary" style="width: max-content;">Send Message</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Kristian Frroku</p>
+    <div class="container">
+      <p>© 2026 Kristian Frroku. All rights reserved.</p>
+    </div>
   </footer>
-
-  <!-- Decoupled Client-Side Logic -->
-  <script type="module" src="main.js"></script>
-
-  <!-- Service worker Registration -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
-          .catch(err => console.error('Service Worker registration failed: ', err));
-      });
-    }
-  </script>
 </body>
 </html>
